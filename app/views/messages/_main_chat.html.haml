@@ -1,0 +1,30 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__group-info__left
+      .main-chat__group-info__left__current-group
+        sdf
+      .main-chat__group-info__left__member-list
+        Member: okutani
+    = link_to "#", class: "right-edit" do
+      .main-chat__group-info__right-edit__edit-btn
+        Edit
+  
+  .main-chat__message-list
+    .main-chat__message-list__message
+      .main-chat__message-list__message__upper
+        .main-chat__message-list__message__upper__user-name
+          masa
+        .main-chat__message-list__message__upper__time
+          2020/05/25(sun)22:08:29
+      .main-chat__message-list__message-text
+        text
+  
+  .main-chat__message-form
+    .main-chat__message-form__form
+      .main-chat__message-form__form__input-box
+        %input{type: "text", class: "main-chat__message-form__form__input-box__text", placeholder: "type a message"}
+        %label{class: "main-chat__message-form__form__input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "main-chat__message-form__form__input-box__image__file"}
+      %input{type: "submit", class: "main-chat__message-form__form__submit-btn"}
+    
