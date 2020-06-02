@@ -47,11 +47,14 @@
     &__group{
       color: white;
       margin-bottom: 40px;
-      &__group-name{
+      &__name{
+        a {
+          color: white;
+        }
         font-size: 15px;
         margin-bottom: 5px;
       }
-      &__group-latest-message{
+      &__latest-message{
         font-size: 11px;
       }
     }
