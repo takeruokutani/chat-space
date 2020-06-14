@@ -10,9 +10,8 @@
       .group-info__right-edit__edit-btn
         Edit
   
-  .message-list
-    .messages
-      = render @messages
+  .messages
+    = render @messages
   
   .message-form
     = form_for [@group, @message] do |f|
