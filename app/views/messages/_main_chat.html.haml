@@ -15,7 +15,7 @@
   
   .message-form
     = form_for [@group, @message] do |f|
-      = f.text_field :content, class: 'message-form__form', placeholder: 'type a message'
+      = f.text_field :content, class: 'message-form__new_message', placeholder: 'type a message'
       .message-form__form__input-box
         .message-form__form__input-box__text
           = f.label :image, class: 'message-form__form__input-box__text__image' do
