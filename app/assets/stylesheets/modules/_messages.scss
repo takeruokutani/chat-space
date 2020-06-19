@@ -28,7 +28,6 @@
         padding: 0;
       }
       &__icons{
-        width: 60px;
         display: flex;
         li {
           a{
@@ -143,7 +142,7 @@
     .new_message{
       .form{
         display: flex;
-        
+
         &__input-box{
           position: relative;
           width: 100%;
