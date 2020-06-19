@@ -114,7 +114,7 @@
 
     .message{
       padding-bottom: 46px;
-      &__upper{
+      .upper{
         display: flex;
         margin-bottom: 12px;
         &__user-name{
@@ -128,7 +128,7 @@
           margin-left: 10px;
         }
       }
-      &__lower{
+      .lower{
         &__message-text{
           color: #434a54;
           font-size: 14px;
