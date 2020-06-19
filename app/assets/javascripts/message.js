@@ -67,6 +67,9 @@ $('#new_message').on('submit', function(e){
 })
 
 var reloadMessages = function() {
+  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
+    setInterval(reloadMessages, 7000);
+  }
   //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
   var last_message_id = $('.message:last').data("message-id");
   $.ajax({
@@ -95,7 +98,4 @@ var reloadMessages = function() {
     alert('error');
   });
 };
-if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-  setInterval(reloadMessages, 7000);
-}
 });
