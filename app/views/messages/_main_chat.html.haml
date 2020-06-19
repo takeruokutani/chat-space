@@ -5,7 +5,9 @@
         .left__current-group
           = group.name
         .left__member-list
-          = group.name
+          Member:
+          - @group.group_users.each do |group_user|
+            = group_user.user.name
     = link_to edit_group_path(current_user), class: "right-edit" do
       .group-info__right-edit__edit-btn
         Edit
